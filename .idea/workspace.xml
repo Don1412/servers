@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23dbcebd-8df1-439f-a6ec-7185f5c418d3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/server2.dev/core.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server2.dev/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server1.dev/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/server1.dev/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server2.dev/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/server2.dev/core.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server2.dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server2.dev/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,26 +20,26 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server1.dev/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            <state relative-caret-position="235">
+              <caret line="34" column="30" selection-start-line="27" selection-start-column="5" selection-end-line="34" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server2.dev/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="core.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server2.dev/core.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+            <state relative-caret-position="265">
+              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
               <folding>
                 <element signature="e#6#83#0#PHP" expanded="true" />
               </folding>
@@ -66,10 +67,11 @@
         <option value="$PROJECT_DIR$/server1.dev/logs/sample.log" />
         <option value="$PROJECT_DIR$/server1.dev/server.conf" />
         <option value="$PROJECT_DIR$/server1.dev/database.php" />
-        <option value="$PROJECT_DIR$/server2.dev/index.html" />
         <option value="$PROJECT_DIR$/server2.dev/history.php" />
+        <option value="$PROJECT_DIR$/server2.dev/js/jquery.js" />
         <option value="$PROJECT_DIR$/server1.dev/index.php" />
         <option value="$PROJECT_DIR$/server2.dev/core.php" />
+        <option value="$PROJECT_DIR$/server2.dev/index.html" />
       </list>
     </option>
   </component>
@@ -110,6 +112,12 @@
               <item name="servers" type="b2602c69:ProjectViewProjectNode" />
               <item name="servers" type="462c0819:PsiDirectoryNode" />
               <item name="server2.dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servers" type="462c0819:PsiDirectoryNode" />
+              <item name="server2.dev" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="servers" type="b2602c69:ProjectViewProjectNode" />
@@ -158,12 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1530993657747</updated>
       <workItem from="1530993659213" duration="12360000" />
-      <workItem from="1531058037512" duration="3106000" />
+      <workItem from="1531058037512" duration="12050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15466000" />
+    <option name="totallyTimeSpent" value="24410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -174,9 +182,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32991454" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32991454" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -258,27 +266,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server2.dev/index.html">
+    <entry file="file://$PROJECT_DIR$/server2.dev/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="15">
+          <caret line="1" column="86841" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server1.dev/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="235">
+          <caret line="34" column="30" selection-start-line="27" selection-start-column="5" selection-end-line="34" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server2.dev/core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        <state relative-caret-position="265">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
           <folding>
             <element signature="e#6#83#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server2.dev/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
         </state>
       </provider>
     </entry>

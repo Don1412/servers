@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
     <title>Search files</title>
+    <script>
+        $(document).ready(function(){
+            getHistory();
+            $("#search_form").submit(function (event) {
+                event.preventDefault();
+                var data = $("#search_form").serialize();
+                getCurrent(data);
+            })
+        });
+    </script>
+    <script>
+        function getHistory() {
+            $.get('core.php', function(data){
+                $('#history_search').html(data);
+            });
+        }
+        function getCurrent(data) {
+            $.post('core.php', data, function (e) {
+                $('#current_search').html(e);
+            });
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="row">
+            <h5>Форма поиска</h5>
             <div class="col-12 bg-light">
-                <form action="core.php" method="get">
+                <form id="search_form">
                     <div class="form-group">
                         <label for="search_text">Текст поиска</label>
-                        <input class="form-control" type="text" name="search" id="search_text">
+                        <input class="form-control" type="text" name="search" id="search_text" required>
                     </div>
                     <div class="row">
                         <div class="col-6">
@@ -38,6 +62,25 @@
                     </div>
                     <button type="submit" class="btn btn-dark">Поиск</button>
                 </form>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <h5>Результаты поиска</h5>
+            <div class="col-12 bg-light">
+                <b>Текущий поиск</b>
+                <div class="row">
+                    <div id="current_search" class="col-12">
+                        Здесь пока ничего нет
+                    </div>
+                </div>
+                <hr/>
+                <b>История поиска</b>
+                <div class="row">
+                    <div id="history_search" class="col-12">
+                        Здесь пока ничего нет
+                    </div>
+                </div>
             </div>
         </div>
     </div>

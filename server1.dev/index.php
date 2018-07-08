@@ -25,15 +25,12 @@ if(!empty($_POST))
             }
         }
     }
-    if(count($files)) {
-        $file_patterns = implode("\n", $patterns);
-        $paths = implode("\n", $files);
-        $result = array(
-            'patterns' => $file_patterns,
-            'text' => $search_text,
-            'paths' => $paths
-        );
-        echo json_encode($result);
-    }
-    else echo json_encode(["error" => "Совпадений не найдено"]);
+    $file_patterns = implode("\n", $patterns);
+    $paths = implode("\n", $files);
+    $result = array(
+        'patterns' => $file_patterns,
+        'text' => $search_text,
+        'paths' => $paths
+    );
+    echo json_encode($result);
 }
