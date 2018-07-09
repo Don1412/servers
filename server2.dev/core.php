@@ -17,7 +17,32 @@ if($mysqli->connect_errno) {
     exit();
 }
 
-if(isset($_GET))
+if(!empty($_POST)) {
+
+    $http_query = http_build_query($_POST);
+
+    $url = "http://server1/index.php";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST,1);
+    curl_setopt($ch,CURLOPT_POSTFIELDS, $http_query);
+    $returned = json_decode(curl_exec($ch), true);
+    curl_close($ch);
+
+    $query = sprintf("INSERT INTO `search` (`%s`, `date`) VALUES ('%s', now())",
+        implode("`, `", array_keys($returned)), implode("', '", $returned));
+    if(!$mysqli->query($query)) {
+        printf("Ошибка базы данных %s", $mysqli->error);
+    }
+    if(empty($returned['paths'])) {
+        echo "Совпадений не найдено";
+    }
+    else {
+        echo $returned['paths'];
+    }
+}
+else if(isset($_GET))
 {
     $data = $mysqli->query("SELECT * FROM `search`");
 
@@ -63,31 +88,5 @@ if(isset($_GET))
     }
     else {
         echo "Здесь пока ничего нет";
-    }
-}
-
-if(!empty($_POST)) {
-
-    $http_query = http_build_query($_POST);
-
-    $url = "http://server1/index.php";
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POST,1);
-    curl_setopt($ch,CURLOPT_POSTFIELDS, $http_query);
-    $returned = json_decode(curl_exec($ch), true);
-    curl_close($ch);
-
-    $query = sprintf("INSERT INTO `search` (`%s`, `date`) VALUES ('%s', now())",
-        implode("`, `", array_keys($returned)), implode("', '", $returned));
-    if(!$mysqli->query($query)) {
-        printf("Ошибка базы данных %s", $mysqli->error);
-    }
-    if(empty($returned['paths'])) {
-        echo "Совпадений не найдено";
-    }
-    else {
-        echo $returned['paths'];
     }
 }
