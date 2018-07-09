@@ -28,6 +28,7 @@ if(!empty($_POST)) {
     curl_setopt($ch, CURLOPT_POST,1);
     curl_setopt($ch,CURLOPT_POSTFIELDS, $http_query);
     $returned = json_decode(curl_exec($ch), true);
+
     curl_close($ch);
 
     $query = sprintf("INSERT INTO `search` (`%s`, `date`) VALUES ('%s', now())",
